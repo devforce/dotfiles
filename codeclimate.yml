@@ -1,0 +1,67 @@
+# Copyright (C) Salesforce, Inc. 2017 - present All Rights Reserved
+# Unauthorized copying of this file, via any medium is strictly prohibited
+# Proprietary and confidential
+# Written by Michael Papper <mpapper@salesforce.com>, 2017, 2018
+---
+engines:
+  brakeman:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  csslint:
+    enabled: true
+  coffeelint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        ruby:
+          mass_threshold: 40
+        javascript:
+          mass_threshold: 80
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - BUG
+      - FIXME
+  rubocop:
+    enabled: true
+    channel: stable
+prepare:
+  fetch:
+    - url: 'https://raw.githubusercontent.com/devforce/dotfiles/master/rubocop.yml'
+      path: '.rubocop.yml'
+ratings:
+  paths:
+  - Gemfile.lock
+  - "**.erb"
+  - "**.haml"
+  - "**.rb"
+  - "**.rhtml"
+  - "**.slim"
+  - "**.css"
+  - "**.coffee"
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+exclude_paths:
+- config/
+- db/
+- coverage/
+- "app/assets/javascripts/translations.js"
+- "app/assets/javascripts/trailhead_app/i18n.js"
+- "app/assets/javascripts/trailhead_app/translations.js"
+- "**/panels/"
+- "**/vendor/"
+- "**.min.js"
+- "**/*_hype_*.js"
+- ".*"
+- "lib/scripts/"
+- "**/packs/"
