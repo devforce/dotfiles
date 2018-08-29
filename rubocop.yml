@@ -3,5 +3,5 @@
 # Proprietary and confidential
 
 inherit_from:
-  - rubocop_airbnb.yml
+  - https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml
   - trailhead_rubocop.yml

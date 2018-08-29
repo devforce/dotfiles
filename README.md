@@ -14,11 +14,7 @@ inherit_from:
   - https://raw.githubusercontent.com/devforce/dotfiles/master/rubocop.yml
 ```
 
-And add the following to your Gemfile:
-        
-        gem 'rubocop-airbnb'
-    
-Along with any Cop overides. For example:
-    
+And add any Cop overides into your `.rubocop.yml`.
+   
     Metrics/LineLength:
       Max: 150
