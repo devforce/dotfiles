@@ -33,8 +33,10 @@ engines:
     channel: stable
 prepare:
   fetch:
-    - url: 'https://raw.githubusercontent.com/devforce/dotfiles/master/rubocop.yml'
-      path: '.rubocop.yml'
+    - url: 'https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml'
+      path: '.rubocop_airbnb.yml'
+    - url: 'https://raw.githubusercontent.com/devforce/dotfiles/master/trailhead_rubocop.yml'
+      path: '.rubocop_trailhead.yml'
 ratings:
   paths:
   - Gemfile.lock
