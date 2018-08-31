@@ -5,6 +5,12 @@ Public configuration files used by ruby apps
 We're using rubocop as linter to keep our ruby code with the same format.
 
 ### Usage:
+##### In your repo's Gemfile add this to the development section:
+```
+  gem 'rubocop-rails_config', '~> 0.2'
+  gem 'rubocop-rspec'
+```
+
 ##### In your repo's .codeclimate.yml add:
 ```
 prepare:
@@ -14,7 +20,7 @@ prepare:
     - url: 'https://raw.githubusercontent.com/devforce/dotfiles/master/trailhead_rubocop.yml'
       path: '.rubocop_trailhead.yml'
 ```
-This provides a way for Codeclimate to fetch the files and silently replace those 2 files.
+Code Climate configuration looks like this because rubocop is not allowed to follow links, so we download the file beforehand using the above.
 
 ##### In your repo's `.rubocop.yml` add:
 ```
@@ -39,4 +45,13 @@ inherit_from:
 ```
 inherit_from:
   - https://raw.githubusercontent.com/devforce/dotfiles/master/trailhead_rubocop.yml
+```
+       
+##### In your repo you can run rubocop on just your chnaged files:
+```bash
+git status --porcelain | grep M | xargs bundle exec rubocop
+```
+Or for just rb files:
+```bash
+git status --porcelain | grep M | grep '\.rb' | xargs bundle exec rubocop
 ```
