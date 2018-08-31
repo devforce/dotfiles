@@ -11,6 +11,12 @@ We're using rubocop as linter to keep our ruby code with the same format.
   gem 'rubocop-rspec'
 ```
 
+##### In your repo's .gitignore add:
+```
+# Rubocop temporary files
+.rubocop-https---*
+```
+
 ##### In your repo's .codeclimate.yml add:
 ```
 prepare:
