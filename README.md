@@ -53,7 +53,7 @@ inherit_from:
   - https://raw.githubusercontent.com/devforce/dotfiles/master/trailhead_rubocop.yml
 ```
        
-##### In your repo you can run rubocop on just your chnaged files:
+##### In your repo you can run rubocop on just your changed files:
 ```bash
 git status --porcelain | grep M | xargs bundle exec rubocop
 ```
