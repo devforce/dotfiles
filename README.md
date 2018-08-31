@@ -27,7 +27,7 @@ We inherit from a local file instead of directly from the remote so Codeclimate 
 ##### Add any Cop overides into your `.rubocop.yml`.
    
     Metrics/LineLength:
-      Max: 150
+      Max: 42
 
 ##### In your repo add `.rubocop_airbnb.yml` with this content:
 ```
