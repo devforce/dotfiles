@@ -2,8 +2,9 @@
 # Unauthorized copying of this file, via any medium is strictly prohibited
 # Proprietary and confidential
 
+#  - https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml
 inherit_from:
-  - https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml
+  - airbnb_rubocop.yml
   - trailhead_rubocop.yml
 
   # rubocop_airbnb.yml is the remote file in:

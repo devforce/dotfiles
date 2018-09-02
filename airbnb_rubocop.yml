@@ -1,0 +1,2 @@
+inherit_from:
+  - https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml
