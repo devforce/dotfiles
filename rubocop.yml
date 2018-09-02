@@ -6,8 +6,3 @@
 inherit_from:
   - .rubocop_airbnb.yml
   - .rubocop_trailhead.yml
-
-  # rubocop_airbnb.yml is the remote file in:
-  # https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml
-#  - .rubocop_airbnb.yml
-#  - .rubocop_trailhead.yml
