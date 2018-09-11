@@ -1,7 +1,7 @@
 # dotfiles
 Public configuration files used by ruby apps
 
-### Rubocop configuration: 
+### Rubocop configuration:
 We're using rubocop as linter to keep our ruby code with the same format.
 
 ### Usage:
@@ -23,7 +23,7 @@ prepare:
   fetch:
     - url: 'https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml'
       path: '.rubocop_airbnb.yml'
-    - url: 'https://raw.githubusercontent.com/devforce/dotfiles/master/trailhead_rubocop.yml'
+    - url: 'https://raw.githubusercontent.com/devforce/dotfiles/master/rubocop/rubocop_trailhead.yml'
       path: '.rubocop_trailhead.yml'
 ```
 Code Climate configuration looks like this because rubocop is not allowed to follow links, so we download the file beforehand using the above.
@@ -37,7 +37,6 @@ inherit_from:
 We inherit from a local file instead of directly from the remote so Codeclimate can read the file.
 
 ##### Add any Cop overides into your `.rubocop.yml`.
-   
     Metrics/LineLength:
       Max: 42
 
@@ -50,9 +49,8 @@ inherit_from:
 ##### In your repo add `.rubocop_trailhead.yml` with this content:
 ```
 inherit_from:
-  - https://raw.githubusercontent.com/devforce/dotfiles/master/trailhead_rubocop.yml
+  - https://raw.githubusercontent.com/devforce/dotfiles/master/rubocop/rubocop_trailhead.yml
 ```
-       
 ##### In your repo you can run rubocop on just your changed files:
 ```bash
 git status --porcelain | grep M | xargs bundle exec rubocop
