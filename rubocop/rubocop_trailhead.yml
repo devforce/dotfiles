@@ -144,6 +144,9 @@ RSpec/VerifiedDoubles:
 RSpec/MessageSpies:
   Enabled: false
 
+RSpec/NestedGroups:
+  Enabled: false
+
 Style/RescueModifier:
   Description: 'Avoid using rescue in its modifier form.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-rescue-modifiers'
