@@ -178,3 +178,6 @@ Layout/SpaceInsideHashLiteralBraces:
 
 Style/WordArray:
   Enabled: false
+
+Rubocop/Style/TrailingCommaInLiteral:
+  enabled: false
