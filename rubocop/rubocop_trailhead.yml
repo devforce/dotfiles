@@ -62,7 +62,7 @@ Style/TernaryParentheses:
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
-
+  
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
@@ -179,10 +179,10 @@ Layout/SpaceInsideHashLiteralBraces:
 Style/WordArray:
   Enabled: false
 
-Rubocop/Style/TrailingCommaInArrayLiteral:
+Style/TrailingCommaInArrayLiteral:
   Enabled: true
   EnforcedStyleForMultiline: consistent_comma
 
-Rubocop/Style/TrailingCommaInHashLiteral:
+Style/TrailingCommaInHashLiteral:
   Enabled: true
   EnforcedStyleForMultiline: consistent_comma
