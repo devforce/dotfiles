@@ -62,7 +62,7 @@ Style/TernaryParentheses:
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
-  
+
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
@@ -130,7 +130,7 @@ RSpec/LetSetup:
   Enabled: false
 
 RSpec/DescribedClass:
-  Enabled: true
+  Enabled: false
 
 RSpec/ExampleLength:
   Enabled: false
