@@ -13,8 +13,8 @@ Rails/OutputSafety:
 AllCops:
   Exclude:
     - 'db/schema.rb'
-    - 'db/migrate/*'
-    - 'vendor/*'
+    - 'db/migrate/**/*'
+    - 'vendor/**/*'
 
   TargetRubyVersion: 2.4
 
