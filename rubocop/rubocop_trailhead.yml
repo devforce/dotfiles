@@ -7,9 +7,6 @@ require: rubocop-rspec
 Rails:
   Enabled: true
 
-Rails/OutputSafety:
-  Enabled: true
-
 AllCops:
   Exclude:
     - 'db/schema.rb'
@@ -142,13 +139,6 @@ Style/RescueModifier:
 Style/BlockComments:
   Description: 'Do not use block comments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-block-comments'
-  Enabled: false
-
-Rails/HasAndBelongsToMany:
-  Enabled: false
-
-# incompatible with Rails 4
-Rails/HttpPositionalArguments:
   Enabled: false
 
 Style/IfUnlessModifier:
