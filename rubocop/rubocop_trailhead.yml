@@ -7,9 +7,6 @@ require: rubocop-rspec
 Rails:
   Enabled: true
 
-Rails/OutputSafety:
-  Enabled: true
-
 AllCops:
   Exclude:
     - 'db/schema.rb'
@@ -18,7 +15,7 @@ AllCops:
 
   TargetRubyVersion: 2.6
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 
 Metrics/ClassLength:
@@ -44,7 +41,7 @@ Metrics/PerceivedComplexity:
 Metrics/AbcSize:
   Max: 23
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_first_parameter
   Enabled: true
 
@@ -60,26 +57,13 @@ Style/FrozenStringLiteralComment:
 Style/TernaryParentheses:
   Enabled: false
 
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma
-
 Style/SymbolArray:
   EnforcedStyle: brackets
-
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyleForEmptyBraces: no_space
-  EnforcedStyle: space
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
 Style/BlockDelimiters:
-  Enabled: false
-
-Style/BracesAroundHashParameters:
   Enabled: false
 
 Style/RegexpLiteral:
@@ -90,10 +74,10 @@ Style/RegexpLiteral:
 Style/Documentation:
   Enabled: false
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
 Style/ClassAndModuleChildren:
@@ -155,16 +139,6 @@ Style/RescueModifier:
 Style/BlockComments:
   Description: 'Do not use block comments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-block-comments'
-  Enabled: false
-
-Rails/HasAndBelongsToMany:
-  Enabled: false
-
-Rails/FilePath:
-  Enabled: false
-
-# incompatible with Rails 4
-Rails/HttpPositionalArguments:
   Enabled: false
 
 Style/IfUnlessModifier:
