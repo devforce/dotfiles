@@ -64,7 +64,7 @@ Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
 Style/BlockDelimiters:
-  Enabled: false
+  EnforcedStyle: semantic
 
 Style/RegexpLiteral:
   EnforcedStyle: slashes
