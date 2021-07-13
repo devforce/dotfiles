@@ -30,7 +30,7 @@ engines:
       - FIXME
   rubocop:
     enabled: true
-    channel: stable
+    channel: rubocop-0-60
 prepare:
   fetch:
     - url: 'https://raw.githubusercontent.com/airbnb/ruby/master/rubocop-airbnb/config/rubocop-style.yml'
