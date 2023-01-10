@@ -1,6 +1,13 @@
 # dotfiles
 Public configuration files used by ruby apps
 
+# ⚠️ This is now a private repo ⚠️
+Due to the Github IP Allow-Listing project, Trailhead had to:
+* Remove all public repositories from `devforce`
+* Move away from CodeClimate, due to SFCI migration
+
+If you relied on any files in this repository to be public, please copy it into your own project.
+
 ### Rubocop configuration:
 We're using rubocop as linter to keep our ruby code with the same format.
 
